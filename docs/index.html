@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Hotel Varda</title>
+</head>
+<body>
+    <nav>
+        <h1>
+            <!--index html significa que cuando en la pagina toco el logo, vuelvo al inicio-->
+            <a href="#">
+                <!--datos del logo-->
+                <img src="images/logo-hotel.jpg" width="200" alt="logo_hotel_varda">
+            </a>
+       
+
+        </h1>
+        <!--Menu de Navegacion-->
+
+        <ul>
+            <li><a href="#hotel.html">Hotel</a></li>
+            <li><a href="#habitaciones">Habitaciones</a></li>
+            <li><a href="#gastronomia">Gastronomia</a></li>
+            <li><a href="#promociones">Promociones</a></li>
+            <li><a href="#contactos">Contactos</a></li>
+        </ul>
+        <!--idiomas-->
+        <div>
+            <a href=""><img src="images/esp.png" width="35" alt="idioma español"></a>
+            <a href=""><img src="images/ing.png" width="30" alt="idioma ingles"></a>
+        </div>
+
+
+
+    </nav>
+
+    
+    <header>
+        <!-- Aca estara el slider-->
+        <div id="slider">
+            <img src="images/hotel(5).jpg" alt="recepcion_hotel">
+            <!--img src="images/hotel(1).jpg" alt="desayuno_hotel">
+            <img src="images/hotel(4).jpg" alt="cafeteria_hotel">
+            <img src="images/hotel(6).jpg" alt="sauna_hotel">
+            <img src="images/hotel(9).jpg" alt="cafeteria_hotel"-->
+            
+        </div>
+        <!--RESEÑA DEL HOTEL-->
+        <p>El hotel es un moderno hotel ubicado a solo 4 cuadras del centro de la ciudad de Mendoza. Un nuevo concepto en Hotelería diseñado especialmente para el confort del visitante. Hecho a medida para los viajeros más exigentes que quieren disfrutar de todo el encanto de Mendoza. Una propuesta para combinar naturaleza, descanso y relax.</p>
+        
+        <!--agregar un boton que me permita ir al hotel.html-->
+
+        
+
+    </header>
+
+
+    <main>
+        <!--seccion hotel-->
+        <section id="hotel"></section>
+
+        <!--seccion habitaciones-->
+        <section id="habitaciones"></section>
+        <aside id="reservas"></aside>
+        <!--formulario, no lo tengo en el wireframe, preguntar si puede ir dentro de un aside-->
+            <form action="procesar-info.php" method="post">
+                <!--<label for="">Nombre y apellido</label>-->
+                <input type="text" name="nombre" placeholder="Nombre y Apellido">
+                <input type="email" name="nombre" placeholder="E-mail" required>
+                <label for="date">Check-in</label>
+                <input type="date" name="check-in">
+                <label for="date">Check-out</label>
+                <input type="date" name="check-out">
+                <select name="habitacion">
+                    <option value="standard-room">Standard Room</option>
+                    <option value="superior-room" selected>Superior Room</option>
+                </select>
+                <input type="submit" value="Reservar">
+            </form>
+
+
+        <aside id="ubicacion"></aside>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6700.768281932868!2d-68.84414141543898!3d-32.88801041137068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1584833114664!5m2!1ses-419!2sar" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+        <!--seccion gastronomia-->  
+        <section id="gastronomia"></section>
+        <!--seccion promociones--> 
+        <section id="promociones"></section>
+        <!--aside o div contactos--> 
+        <aside id="contactos"></aside>
+        
+    </main>
+
+<!-- para la informacion de contacto: facebook, etc. -->
+    <footer></footer>
+        
+</body>
+</html>
